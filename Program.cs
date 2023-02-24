@@ -6,13 +6,16 @@
         {
             Console.WriteLine("Welcome to the Linked List Problems");
 
-            Console.WriteLine("\nCreate Linked List by Appending 30 and 70 to 56\n");
+            Console.WriteLine("\nInserting 30 between 56 and 70\n");
 
             LinkedList linked = new LinkedList();
-            linked.Append(56);
-            linked.Append(30);
-            linked.Append(70);
+            linked.Add(56);
+            linked.Add(70);
+            linked.Display();
 
+            Console.WriteLine("After Inserting:");
+
+            linked.AddAtPosition(2, 30);
             linked.Display();
         }
     }
