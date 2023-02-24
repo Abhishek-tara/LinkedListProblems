@@ -10,12 +10,13 @@
 
             LinkedList linked = new LinkedList();
             linked.Add(56);
+            linked.Add(30);
             linked.Add(70);
             linked.Display();
 
-            Console.WriteLine("After Inserting:");
+            Console.WriteLine("After Poping First element..");
 
-            linked.AddAtPosition(2, 30);
+            linked.Pop();
             linked.Display();
         }
     }
