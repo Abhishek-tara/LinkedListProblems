@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the Linked List Problems");
 
-            Console.WriteLine("\nCreate Linked List by Appending 30 and 56 to 70\n");
+            Console.WriteLine("\nCreate Linked List by Appending 30 and 70 to 56\n");
 
             LinkedList linked = new LinkedList();
             linked.Append(56);

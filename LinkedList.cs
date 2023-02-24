@@ -14,24 +14,19 @@ namespace LinkedListDemo
         {
             Node node = new Node(data);
 
-            //Checking if head is pointing to null value or not
             if (this.head == null)
             {
-                //If head is pointing to null then add the entered element as first element
                 this.head = node;
             }
             else
             {
-                //Declared temporary node temp pointing head
                 Node temp = head;
 
-                //while we dont't get next value of node as null
                 while (temp.next != null)
                 {
-                    //temp is moving to next node
                     temp = temp.next;
                 }
-                //assigning next of last element (here temp) to newly added "node"
+
                 temp.next = node;
             }
             Console.WriteLine(node.data + " appended to the Linked List");
