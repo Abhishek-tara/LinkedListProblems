@@ -25,7 +25,12 @@
             //linked.Display();
 
             //Console.WriteLine("\n------------finding node in linked list --------------");
-            linked.Search(30);
+            //linked.Search(30);
+
+            //Console.WriteLine("\n------------Insert 40 after 30 --------------");
+            linked.InsertAfter(30, 40);
+            linked.Display();
+
         }
     }
 }
