@@ -11,6 +11,7 @@
             LinkedList linked = new LinkedList();
             linked.Add(56);
             linked.Add(30);
+            linked.Add(40);
             linked.Add(70);
             linked.Display();
 
@@ -28,8 +29,14 @@
             //linked.Search(30);
 
             //Console.WriteLine("\n------------Insert 40 after 30 --------------");
-            linked.InsertAfter(30, 40);
+            //linked.InsertAfter(30, 40);
+            //linked.Display();
+
+
+            //Console.WriteLine("\n------------Deleting 40 From Linked list --------------");
+            linked.DeleteValue(40);
             linked.Display();
+            linked.Size();
 
         }
     }
