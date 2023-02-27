@@ -172,6 +172,29 @@ namespace LinkedListDemo
             Console.WriteLine("Linked List size is : " + size);
         }
 
+        internal void OrderedList(int data)
+        {
+            Node newNode = new Node(data);
+            Node tempHead = head;
+            //If list is empty or the head is pointing to a node of data which is greater than the current node
+            if (head == null || head.data >= newNode.data)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            else
+            {
+                //tempHead will got till the end and will locate the node's data less than newNode's data
+                while (tempHead.next != null && tempHead.next.data < newNode.data)
+                {
+                    tempHead = tempHead.next;
+                }
+                //then newNode will be inserted after tempHead node
+                newNode.next = tempHead.next;
+                tempHead.next = newNode;
+            }
+            Console.WriteLine(newNode.data + " is inserted in the Linked List");
+        }
         public void Display()
         {
             Node temp = this.head;
